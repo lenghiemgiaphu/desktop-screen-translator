@@ -2,6 +2,8 @@
 
 # Contextual UI Screen Translator
 
+(Evolution from Resume Prototype)
+
 **Press a hotkey, drag over any text on screen, and get a translation that knows *which application* you are looking at.**
 Adaptive computer-vision OCR · context-weighted glossary · non-blocking hybrid translation
 
