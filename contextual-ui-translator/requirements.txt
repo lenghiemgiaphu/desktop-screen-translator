@@ -1,0 +1,7 @@
+PyQt5>=5.15.9
+pytesseract>=0.3.10
+Pillow>=10.0.0
+numpy>=1.24
+deep-translator>=1.11.4
+keyboard>=0.13.5
+thefuzz>=0.22.1
