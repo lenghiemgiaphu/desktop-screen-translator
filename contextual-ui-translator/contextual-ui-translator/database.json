@@ -1,0 +1,193 @@
+{
+  "UI_001": {
+    "en": "task manager",
+    "zh": "任务管理器",
+    "pinyin": "rèn wu guǎn lǐ qì",
+    "vi": "Trình quản lý tác vụ",
+    "context": "browser"
+  },
+  "UI_002": {
+    "en": "New tab",
+    "zh": "打开新的标签页",
+    "pinyin": "Dǎkāi xīn de biāoqiān yè",
+    "vi": "Thẻ mới",
+    "context": "browser"
+  },
+  "UI_003": {
+    "en": "Settings",
+    "zh": "设置",
+    "pinyin": "shè zhì",
+    "vi": "Cài đặt",
+    "context": "global"
+  },
+  "UI_004": {
+    "en": "History",
+    "zh": "历史记录",
+    "pinyin": "lì shǐ jì lù",
+    "vi": "Lịch sử",
+    "context": "global"
+  },
+  "UI_005": {
+    "en": "New window",
+    "zh": "新建窗口",
+    "pinyin": "xīn jiàn chuāng kǒu",
+    "vi": "Cửa sổ mới",
+    "context": "browser"
+  },
+  "UI_006": {
+    "en": "New Incognito window",
+    "zh": "新的无痕式窗口",
+    "pinyin": "xīn de wú hén shì chuāng kǒu",
+    "vi": "Cửa sổ ẩn danh mới",
+    "context": "browser"
+  },
+  "UI_007": {
+    "en": "Downloads",
+    "zh": "下载内容",
+    "pinyin": "Xiàzài nèiróng",
+    "vi": "Tệp đã tải xuống",
+    "context": "global"
+  },
+  "UI_008": {
+    "en": "Bookmarks and lists",
+    "zh": "书签和清单",
+    "pinyin": "shū qiān hé qīng dān",
+    "vi": "Dấu trang và danh sách",
+    "context": "browser"
+  },
+  "UI_009": {
+    "en": "Tab groups",
+    "zh": "标签页分组",
+    "pinyin": "biāo qiān yè fēn zǔ",
+    "vi": "Nhóm thẻ",
+    "context": "browser"
+  },
+  "UI_010": {
+    "en": "Extensions",
+    "zh": "扩展程序",
+    "pinyin": "kuò zhǎn chéng xù",
+    "vi": "Tiện ích mở rộng",
+    "context": [
+      "browser",
+      "ide"
+    ]
+  },
+  "UI_011": {
+    "en": "Delete browsing data",
+    "zh": "删除浏览数据",
+    "pinyin": "shān chú liú lǎn shù jù",
+    "vi": "Xóa dữ liệu duyệt web",
+    "context": "browser"
+  },
+  "UI_012": {
+    "en": "Passwords and autofill",
+    "zh": "密码和自动填充",
+    "pinyin": "mì mǎ hé zì dòng tián chōng",
+    "vi": "Mật khẩu và tự động điền",
+    "context": "browser"
+  },
+  "UI_013": {
+    "en": "Print",
+    "zh": "打印",
+    "pinyin": "dǎ yìn",
+    "vi": "In",
+    "context": "global"
+  },
+  "UI_014": {
+    "en": "Translate",
+    "zh": "翻译",
+    "pinyin": "fān yì",
+    "vi": "Dịch",
+    "context": "global"
+  },
+  "UI_015": {
+    "en": "Branch",
+    "vi": "Nhánh mã nguồn",
+    "context": "ide"
+  },
+  "UI_016": {
+    "en": "Branch",
+    "vi": "Chi nhánh",
+    "context": "office"
+  },
+  "UI_017": {
+    "en": "Merge",
+    "vi": "Hợp nhất nhánh",
+    "context": "ide"
+  },
+  "UI_018": {
+    "en": "Merge",
+    "vi": "Gộp ô",
+    "context": "office"
+  },
+  "UI_019": {
+    "en": "Commit",
+    "vi": "Ghi nhận thay đổi (commit)",
+    "context": "ide"
+  },
+  "UI_020": {
+    "en": "Source Control",
+    "vi": "Quản lý mã nguồn",
+    "context": "ide"
+  },
+  "UI_021": {
+    "en": "Run and Debug",
+    "vi": "Chạy và gỡ lỗi",
+    "context": "ide"
+  },
+  "UI_022": {
+    "en": "Terminal",
+    "vi": "Cửa sổ dòng lệnh",
+    "context": "ide"
+  },
+  "UI_023": {
+    "en": "Problems",
+    "vi": "Vấn đề",
+    "context": "ide"
+  },
+  "UI_024": {
+    "en": "Frame",
+    "vi": "Khung",
+    "context": "design"
+  },
+  "UI_025": {
+    "en": "Layer",
+    "vi": "Lớp",
+    "context": "design"
+  },
+  "UI_026": {
+    "en": "Mask",
+    "vi": "Mặt nạ",
+    "context": "design"
+  },
+  "UI_027": {
+    "en": "Inventory",
+    "vi": "Túi đồ",
+    "context": "gaming"
+  },
+  "UI_028": {
+    "en": "Quest",
+    "vi": "Nhiệm vụ",
+    "context": "gaming"
+  },
+  "UI_029": {
+    "en": "File",
+    "vi": "Tệp tin",
+    "context": "global"
+  },
+  "UI_030": {
+    "en": "Save",
+    "vi": "Lưu",
+    "context": "global"
+  },
+  "UI_031": {
+    "en": "Open",
+    "vi": "Mở",
+    "context": "global"
+  },
+  "UI_032": {
+    "en": "Exit",
+    "vi": "Thoát",
+    "context": "global"
+  }
+}
