@@ -71,13 +71,14 @@ def build_app():
     from ui.services import AppServices
     from ui.settings_dialog import SettingsDialog
     from ui.snipper import SnippingWidget
+    from ui.styles import palette
 
-    def make_icon() -> QIcon:
+    def make_icon(theme: str = cfg_mod.DEFAULT_THEME) -> QIcon:
         pm = QPixmap(64, 64)
         pm.fill(Qt.transparent)
         p = QPainter(pm)
         p.setRenderHint(QPainter.Antialiasing)
-        p.setBrush(QColor("#2563EB"))
+        p.setBrush(QColor(palette(theme).accent))
         p.setPen(Qt.NoPen)
         p.drawRoundedRect(4, 4, 56, 56, 14, 14)
         p.setPen(QColor("white"))
@@ -110,7 +111,7 @@ def build_app():
             self.overlay = None
             self.hotkey_handle = None
 
-            self.tray = QSystemTrayIcon(make_icon())
+            self.tray = QSystemTrayIcon(make_icon(self.config.get("theme")))
             self.menu = QMenu()
             self.act_capture = QAction("", self.app)
             self.act_capture.triggered.connect(self.request_snip)
@@ -158,6 +159,7 @@ def build_app():
                 self.config.update(**dialog.values())
                 self._apply_ocr_settings()
                 self.register_hotkey()
+                self.tray.setIcon(make_icon(self.config.get("theme")))
 
         # ------------------------------------------------------------- hotkey
         def register_hotkey(self) -> bool:
@@ -193,13 +195,26 @@ def build_app():
             # The foreground window must be sampled *before* the snipping overlay appears.
             self.snipper.start(get_foreground_context())
 
+        def _pinned_overlay(self):
+            """The open overlay when the user pinned it, else ``None``."""
+            overlay = self.overlay
+            return overlay if overlay is not None and overlay.pinned and overlay.isVisible() else None
+
         def on_captured(self, image, rect, context) -> None:
+            pinned = self._pinned_overlay()
+            if pinned is not None:                      # pinned: update in place, keep position and size
+                pinned.update_capture(image, context)
+                return
             if self.overlay is not None:
                 self.overlay.close()
             self.overlay = MultiLineOverlay(self.services, rect=rect, image=image, context=context)
             self.overlay.show()
 
         def open_history(self) -> None:
+            pinned = self._pinned_overlay()
+            if pinned is not None:
+                pinned.show_history()
+                return
             if self.overlay is not None:
                 self.overlay.close()
             self.overlay = MultiLineOverlay(self.services, start_in_history=True)
